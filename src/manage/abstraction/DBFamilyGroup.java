@@ -49,7 +49,7 @@ public class DBFamilyGroup {
 		}
 
 		try {
-			// Puis on se connecte à la base de donnees
+			// Puis on se connecte � la base de donnees
 			connexion = DriverManager.getConnection(database, user, password);
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class DBFamilyGroup {
 	}
 	
 	/**
-	 * Arrête correctement HyperSQL
+	 * Arr礙te correctement HyperSQL
 	 * 
 	 * @throws SQLException
 	 */
@@ -69,6 +69,9 @@ public class DBFamilyGroup {
 		connexion.close();
 	}
 	
+	/**
+	 * Testing
+	 */
 	public static void main(String[] args) {
 		DBFamilyGroup.connexionBD();
 		try {

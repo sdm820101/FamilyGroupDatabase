@@ -13,6 +13,8 @@ public class FamilyGroupJDBC extends FamilyGroup {
 		DBFamilyGroup.connexionBD();
 		try {
 			s = DBFamilyGroup.getConnexion().createStatement();
+			// TODO: using s to give out the SQL
+			
 		}
 		catch (SQLException e) {
 			e.printStackTrace();

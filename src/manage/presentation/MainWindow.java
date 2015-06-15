@@ -20,13 +20,20 @@ import manage.controle.*;
 import manage.abstraction.FamilyGroup;
 import manage.abstraction.FamilyGroupJDBC;
 
-
+/**
+ * 
+ *
+ */
 public class MainWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public static final int LABEL_SIZE = 18;
 	
 	private FamilyGroup modele;
 	
+	/**
+	 * The UI of system<br>
+	 * @param fam
+	 */
 	public MainWindow(FamilyGroup fam) {
 		super("Manage Family Group");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
