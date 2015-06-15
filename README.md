@@ -1,11 +1,11 @@
-# FamilyGroupDatabase --- Team 4 
+ï»¿# FamilyGroupDatabase --- Team 4 
 CS4710 Introducing to Databases
 
 GIT repository: https://github.com/NTHUDBMS/FamilyGroupDatabase.git
 
 Member: 
 -----------------------------------------------------------
-	Paul, Shawn(½²¦tµ¾), Mike(±i®Ñ¥¿), Ä¬¬f¤¸
+	Paul, Shawn(è”¡å®‡ç¿”), Mike(å¼µæ›¸æ­£), è˜‡æŸå…ƒ
 	
 
 Description:
