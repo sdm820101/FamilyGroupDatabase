@@ -1,0 +1,69 @@
+                       ________________ ____________________ ________________________ _______________________ _________________________
+ PersonalInformation  | person_id(int) | gender(varchar 10) | first_name(varchar 50) | last_name(varchar 50) | ID_card_num(varchar 20) |
+                      |___PrimaryKey___|____________________|________________________|_______________________|_________________________|
+        _______________ __________________ _____________________
+ Place | place_id(int) | city(varchar 50) | country(varchar 50) |
+       |__PrimaryKey___|__________________|_____________________|
+          _______________ _________________________ _____________ _______________ ___________________ __________________
+ Address | place_id(int) | street_name(varchar 50) | number(int) | floor(double) | distinct(Boolean) | village(Boolean) |
+         |__PrimaryKey___|_________________________|_____________|_______________|___________________|__________________|
+           _______________ ___________________
+ *locates | place_id(int) | apartment_id(int) |
+          |_______________|____PrimaryKey_____|
+            ____________ __________________ _________________________ ____________
+ Apartment |  id(int)   | property_id(int) | description(varchar 50) | price(int) |
+           |_PrimaryKey_|__________________|_________________________|____________|
+          ____________ __________________ _________________________ ____________
+ Vehicle |  id(int)   | property_id(int) | description(varchar 50) | price(int) |
+         |_PrimaryKey_|__________________|_________________________|____________|
+             ____________ __________________ _________________________ ____________
+ Motorcycle |  id(int)   | property_id(int) | description(varchar 50) | price(int) |
+            |_PrimaryKry_|__________________|_________________________|____________|
+           __________________ __________________ _________________________ ____________ 
+ Property | property_id(int) | type(varchar 20) | description(varchar 50) | price(int) |		    
+          |___PrimaryKey_____|__________________|_________________________|____________|
+       ________________ __________________ 
+ *own | person_id(int) | property_id(int) |
+      |________________|___PrimaryKey_____|
+                    __________________ ______________
+ *manufacturedTime | property_id(int) | date_id(int) |
+                   |___PrimaryKey_____|______________|
+                 __________________ ________________ ______________
+ *purchasedTime | property_id(int) | person_id(int) | date_id(int) |
+                |___PrimaryKey_____|___PrimaryKey___|______________|
+                    ________________ ___________________ ____________________
+ *currentResidence | person_id(int) | apartment_id(int) | start_date_id(int) |
+                   |___PrimaryKey___|___________________|_____PrimaryKey_____|
+                     ________________ ___________________ ____________________ __________________
+ *previousResidence | person_id(int) | apartment_id(int) | start_date_id(int) | end_date_id(int) |
+                    |___PrimaryKey___|____PrimaryKey_____|_____PrimaryKey_____|____PrimaryKey____|
+      _____________ ______________________ 
+ Job | job_id(int) | position(varchar 50) |
+     |_PrimaryKey__|______________________|
+          ______________ ________________
+ *manage | boss_id(int) | worker_id(int) |
+         |__PrimaryKey__|___PrimaryKey___|
+          ____________ __________________
+ Company |  c_id(int) | name(varchar 50) |
+         |_PrimaryKey_|__________________|
+         ___________ _____________ ____________________ __________________ ___________________
+ *Offer | c_id(int) | job_id(int) | start_date_id(int) | end_date_id(int) | cuerrent(Boolean) |
+        |___________|_PrimaryKey__|____________________|__________________|___________________|
+        _____________ ________________ _____________
+ *work | salary(int) | person_id(int) | job_id(int) |
+       |_____________|___PrimaryKey___|_PrimaryKey__|
+            ______________ ________________ ______________ ___________________________ __________________ ____________
+ *Marriage | male_id(int) | female_id(int) | date_id(int) | current_marriage(Boolean) | divorce(Boolean) |  ID(int)   |
+           |______________|________________|______________|___________________________|__________________|_PrimaryKey_|
+                    ____________ _______________
+ *marriageLocation |  ID(int)   | place_id(int) |
+                   |_PrimaryKey_|_______________|
+       ______________ __________________
+ Date | date_id(int) | order_date(date) |
+      |__PrimaryKey__|__________________|
+         ________________ ______________ _____________ _____________
+ *Birth | person_id(int) | date_id(int) | mom_id(int) | dad_id(int) |
+        |___PrimaryKey___|______________|_____________|_____________|
+             ________________ _______________
+ *bornPlace | person_id(int) | place_id(int) |
+            |___PrimaryKey___|_______________|
